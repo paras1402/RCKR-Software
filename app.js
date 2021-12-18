@@ -57,9 +57,9 @@ const arr = data.map((value) => {
   const name = value.name;
   const currencies = value.currencies;
   let present = false;
-  // if pop of that country is greater than or equal to the given population
-  if ((pop) => 57100) {
-    //checking if pop this country contains currency which map value is 1;
+  // if population of that country is greater than or equal to the given population
+  if (pop >= 6700) {
+    //checking  this country contains currency which map value is 1;
     for (let i = 0; i < currencies.length; i++) {
       const cuurcode = currencies[i].code;
       const num = mp.get(cuurcode);
@@ -74,6 +74,7 @@ const arr = data.map((value) => {
     }
   }
 });
+
 arr.sort(function (a, b) {
   var keyA = a.pop,
     keyB = b.pop;
